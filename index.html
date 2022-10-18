@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="js/script.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("user_EOQMeszoGu8x11jv49wCq");
+      })();
+    </script>
+
+  </head>
+  <body>
+    <form action="#">
+        <input type="text" id="toName" placeholder="Input Name"><br>
+        <input type="text" id="fromMail" placeholder="Input Email"><br>
+        <input type="text" id="message" placeholder="Input Message"><br>
+        <button onclick="sendMail()">Send to email</button>
+    </form>
+  </body>
+</html>
